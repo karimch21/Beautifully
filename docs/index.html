@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <a href="#" class="logo__wrap header__logo-wrap">
+                    <img src="images/logo.png" alt="">
+                    <div class="logo__text">
+                        Салон красоты
+                        <span>г.Краснодар</span>
+                    </div>
+                </a>
+
+                <a href="tel:79876543210" class="number header__number" aria-label="Number phone">+7 987 654 32 10</a>
+
+                <nav class="main__menu">
+                    <button class="burger__menu" aria-label="Menu Button">
+                        <div class=""></div>
+                        <div class=""></div>
+                        <div class=""></div>
+                    </button>
+                    <ul class="main__list">
+                        <li class="main__list-item">
+                            <a href="#advantages" class="main__list-link">О мастере </a>
+                        </li>
+                        <li class="main__list-item">
+                            <a href="#services" class="main__list-link">Услуги </a>
+                        </li>
+                        <li class="main__list-item">
+                            <a href="#portfolio" class="main__list-link">Портфолио</a>
+                        </li>
+                        <li class="main__list-item">
+                            <a href="#stock" class="main__list-link">Акции</a>
+                        </li>
+                        <li class="main__list-item">
+                            <a href="#feedback" class="main__list-link">Отзывы </a>
+                        </li>
+                        <li class="main__list-item">
+                            <a href="#contact" class="main__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="start__block">
+        <div class="start__block-wrap">
+            <div class="container">
+                <div class="start__block-inner">
+                    <div class="start__block-content">
+                        <h1 class="start__block-title title">
+                            Парикмахер-визажист
+                        </h1>
+                        <p class="start__block-text">
+                            Создам для Вас великолепный образ
+                            на любое мероприятие
+                        </p>
+
+                        <button data-fancybox data-src="#modal__callback" class="start__block-btn btn">
+                            Заказать звонок
+                        </button>
+
+                    </div>
+                    <div class="start__block-img">
+                        <img src="images/women-start.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__callback modal__block" id="modal__callback">
+            <div class="callback__body modal__body ">
+                <div class="modal__callback-inner">
+                    <h2 class="modal__callback-title title-center">Заказ обратного звонка</h2>
+                    <p class="modal__callback-text">Оставьте свои данные, перезвоню в течении 15 минут</p>
+
+                    <div class="callback__form">
+                        <form class="form example" id="form1" action="mail/sendmail.php" method="POST">
+                            <input type="hidden" name="form_subject" value="Обратный звонок">
+
+                            <label for="callback__name" class="callbak__content-wrap">
+                                <span class="callback__name-text callback__text-span">Ваше имя:</span>
+                                <input id="callback__name" name="Имя" type="text"
+                                    class="callback__content callback__name" placeholder="Светлана Кириленко"
+                                    data-validate-field="myField" required>
+                            </label>
+
+                            <label for="callback__phone" class="callbak__content-wrap callbak__wrap-phone">
+                                <span class="callback__name-phone callback__text-span"> Телефон:</span>
+                                <input id="callback__phone" name="Телефон" type="tel"
+                                    class="callback__content callbak__phone" placeholder="+7 (987) 654 32-10"
+                                    data-validate-field="tel" required>
+                            </label>
+
+                            <div class="callback__btn-wrap">
+                                <button type="submit" class="btn callback__btn">
+                                    Заказать звонок
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__callback modal__block callback-modal__thanks" id="callback-modal__thanks">
+            <div class="callback__body modal__body ">
+                <div class="modal__callback-inner">
+                    <h2 class="modal__callback-title title-center">Заявка принята</h2>
+                    <p class="modal__callback-text">Ожидайте звонка в течении 15 минут</p>
+
+                    <div class="callback__mark">
+                        <img src="images/mark-thank.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="advantages__title title">
+                <span>Мария Майер</span>
+            </h2>
+            <div class="advantages__inner">
+
+                <div class="advantages__img">
+                    <img src="images/advantages-women.png" alt="">
+                </div>
+                <div class="advantages__content">
+                    <div class="advantages__list-wrap">
+                        <ul class="advantages__list advantages__list-one">
+                            <li class="advantages__item-one">
+                                <img class="advantages__icon" src="images/advantage-icon1.png" alt="">
+
+                                <div class="advantages__item-text">Дипломированный парикмахер-визажист</div>
+                            </li>
+                            <li class="advantages__item-one">
+                                <img class="advantages__icon" src="images/advantage-icon2.png" alt="">
+                                <div class="advantages__item-text"> Стаж в профессии более 7 лет!</div>
+                            </li>
+                            <li class="advantages__item-one">
+                                <img class="advantages__icon" src="images/advantage-icon3.png" alt="">
+                                <div class="advantages__item-text"> Креативный подход к работе</div>
+                            </li>
+                        </ul>
+
+                        <ul class="advantages__list advantages__list-two">
+                            <li class="advantages__item-two">
+                                <img class="advantages__icon" src="images/check.png" alt="">
+                                <div class="advantages__item-text">Я являюсь
+                                    <span>профессиональным парикмахером-визажистом</span> с опытом работы более 7
+                                    лет
+                                    в салоне красоты.
+                                </div>
+                            </li>
+                            <li class="advantages__item-two">
+                                <img class="advantages__icon" src="images/check.png" alt="">
+                                <div class="advantages__item-text">
+                                    Получила
+                                    <span>профессиональное образование</span> в академии <span>парикмахерского
+                                        искусства.</span>
+                                </div>
+
+                            </li>
+                            <li class="advantages__item-two">
+                                <img class="advantages__icon" src="images/check.png" alt="">
+                                <div class="advantages__item-text">
+                                    <span>Прошла
+                                        семинары</span> по созданию вечерних и свадебных причесок <span>от ведущих
+                                        мировых стилистов.</span>
+                                </div>
+                            </li>
+                            <li class="advantages__item-two">
+                                <img class="advantages__icon" src="images/check.png" alt="">
+                                <div class="advantages__item-text">
+                                    Принимаю <span>активное
+                                        участие</span> во многих конкурсах, показах и фотосессиях.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services__inner">
+
+                <div class="services__block services__block-one">
+                    <div class="services__content-one">
+                        <h2 class="services__title title">
+                            Услуги парикмахера
+                        </h2>
+
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link">Вечерние прически</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link">Свадебные прически</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link">Креативные стрижки</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link"> Окрашивание волос</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link"> Выпрямление волос</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link">Наращивание волос</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a href="#" class="services__list-link">Ламинированние волос</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__img">
+                        <img src="images/services-women1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="services__inner-block">
+                    <div class="services__block services__block-two">
+                        <div class="services__img-two">
+                            <img src="images/services-women2.png" alt="">
+                        </div>
+                        <div class="services__content">
+                            <h2 class="services__title title">
+                                Услуги визажиста
+                            </h2>
+                            <ul class="services__list">
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link">Дневной макияж</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link"> Вечерний макияж</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link"> Свадебный макияж</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link"> Аэромакияж</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link"> Аквамикияж</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link">Наращивание ресниц</a>
+                                </li>
+                                <li class="services__list-item">
+                                    <a href="#" class="services__list-link">Наращивание бровей</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn services__btn fancybox-trigger" data-fancybox data-src="#modal__services"
+                        data-index="1">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal__services modal__block" id="lightbox">
+            <div class="services__body modal__body">
+                <div class="modal__services-inner wrapper">
+                    <div class="tabs tabs__services">
+                        <span class="tab tab__services tab__services--active" data-id="1">Услуги
+                            парикмахера</span>
+                        <span class="tab tab__services" data-id="2">Услуги визажиста</span>
+                    </div>
+                    <div class="tab_content">
+                        <div class="tab-item tab-item--display active-tab" id="1">
+
+
+                            <div class="swiper-container modal-services1">
+
+                                <div class="services__btn-slider">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="modal__services-title">
+                                            Вечерние прически
+                                        </div>
+                                        <div class="modal__services-block">
+                                            <div class="modal__services-img">
+                                                <img src="images/modal__services.png" alt="">
+                                            </div>
+                                            <div class="modal__services-content">
+                                                <p class="modal__services-text">
+                                                    Стоимость вечерних или сваденых причесок,
+                                                    зависит от длинны волос
+                                                </p>
+                                                <ul class="modal__services-list">
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Короткие волосы</span>
+                                                        <span class="modal__services-price">от 900р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Средние волосы</span>
+                                                        <span class="modal__services-price">от 1300р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Длинные волосы</span>
+                                                        <span class="modal__services-price">от 1700р</span>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="modal__services-form">
+                                                    <form class="services-form__inner  services-form1 example"
+                                                        action="mail/sendmail.php" method="POST">
+
+                                                        <input type="hidden" name="form_subject"
+                                                            value="Предварительная запись">
+
+                                                        <div class="services-form__title">
+                                                            Предварительная запись
+                                                        </div>
+                                                        <div class="services__form-block">
+                                                            <input name="Телефон" type="tel"
+                                                                class="modal__services-phone" placeholder="Телефон:"
+                                                                data-validate-field="tel">
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="modal__services-btn btn">Записаться</button>
+                                                    </form>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="modal__services-title">
+                                            Свадебные прически
+                                        </div>
+                                        <div class="modal__services-block">
+                                            <div class="modal__services-img">
+                                                <img src="images/portfolio/item3.jpg" alt="">
+                                            </div>
+                                            <div class="modal__services-content">
+                                                <p class="modal__services-text">
+                                                    Стоимость вечерних или сваденых причесок,
+                                                    зависит от длинны волос
+                                                </p>
+                                                <ul class="modal__services-list">
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Короткие волосы</span>
+                                                        <span class="modal__services-price">от 900р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Средние волосы</span>
+                                                        <span class="modal__services-price">от 1300р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Длинные волосы</span>
+                                                        <span class="modal__services-price">от 1700р</span>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="modal__services-form">
+                                                    <form class="services-form__inner services-form2 example"
+                                                        action="mail/sendmail.php" method="POST">
+
+
+                                                        <input type="hidden" name="form_subject"
+                                                            value="Предварительная запись">
+
+                                                        <div class="services-form__title">
+                                                            Предварительная запись
+                                                        </div>
+                                                        <div class="services__form-block">
+                                                            <input name="Телефон" type="tel"
+                                                                class="modal__services-phone" placeholder="Телефон:"
+                                                                data-validate-field="tel" required>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="modal__services-btn btn">Записаться</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-item tab-item--display" id="2">
+                            <div class="swiper-container modal-services2">
+
+                                <div class="services__btn-slider">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <div class="modal__services-title">
+                                            Дневной макияж
+                                        </div>
+                                        <div class="modal__services-block">
+                                            <div class="modal__services-img">
+                                                <img src="images/portfolio/item5.jpg" alt="">
+                                            </div>
+                                            <div class="modal__services-content">
+                                                <p class="modal__services-text">
+                                                    Стоимость вечерних или сваденых причесок,
+                                                    зависит от длинны волос
+                                                </p>
+                                                <ul class="modal__services-list">
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Короткие волосы</span>
+                                                        <span class="modal__services-price">от 900р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Средние волосы</span>
+                                                        <span class="modal__services-price">от 1300р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Длинные волосы</span>
+                                                        <span class="modal__services-price">от 1700р</span>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="modal__services-form">
+                                                    <form action="mail/sendmail.php" method="POST"
+                                                        class="services-form__inner services-form3 example">
+
+                                                        <input type="hidden" name="form_subject"
+                                                            value="Предварительная запись">
+
+                                                        <div class="services-form__title">
+                                                            Предварительная запись
+                                                        </div>
+                                                        <div class="services__form-block">
+                                                            <input name="Телефон" type="tel"
+                                                                class="modal__services-phone" placeholder="Телефон:"
+                                                                data-validate-field="tel" required>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="modal__services-btn btn">Записаться</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="modal__services-title">
+                                            Вечерний макияж
+                                        </div>
+                                        <div class="modal__services-block">
+                                            <div class="modal__services-img">
+                                                <img src="images/portfolio/item7.jpg" alt="">
+                                            </div>
+                                            <div class="modal__services-content">
+                                                <p class="modal__services-text">
+                                                    Стоимость вечерних или сваденых причесок,
+                                                    зависит от длинны волос
+                                                </p>
+                                                <ul class="modal__services-list">
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Короткие волосы</span>
+                                                        <span class="modal__services-price">от 900р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Средние волосы</span>
+                                                        <span class="modal__services-price">от 1300р</span>
+                                                    </li>
+                                                    <li class="modal__services-item">
+                                                        <span class="modal__services-name">Длинные волосы</span>
+                                                        <span class="modal__services-price">от 1700р</span>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="modal__services-form">
+                                                    <form action="mail/sendmail.php" method="POST"
+                                                        class="services-form__inner services-form4 example">
+
+                                                        <input type="hidden" name="form_subject"
+                                                            value="Предварительная запись">
+
+                                                        <div class="services-form__title">
+                                                            Предварительная запись
+                                                        </div>
+                                                        <div class="services__form-block">
+                                                            <input name="Телефон" type="tel"
+                                                                class="modal__services-phone" placeholder="Телефон:"
+                                                                data-validate-field="tel" required>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="modal__services-btn btn">Записаться</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+    </section>
+
+    <section id="stock" class="stock">
+        <div class="container">
+            <div class="stock__inner">
+                <div class="stock__block-top">
+                    <h2 class="stock__title title">
+                        Акция!
+                    </h2>
+                    <ul class="stock__list">
+                        <li class="stock__text-top">
+                            <span class="stock-top__title">Только 3 дня!</span>
+                            <time class="stock__time" datetime="2019-04-13 00:00">с 11.04 по 13.04.2019</time>
+                        </li>
+                        <li class="stock__text-middle">
+                            <span>Ламинирование волос</span>
+                            любой длины
+                        </li>
+                        <li class="stock__text-bottom">
+                            <span class="stock-bottom__title">-20%</span>
+                            <span class="stock-prev__price">3000р</span>
+                            <span class="stock-last__price">2400р</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stock__block-time">
+                    <ul class="stock__list-time">
+                        <li class="stock__item">Дней<span class="stock__item-time" id="days"></span></li>
+                        <li class="stock__item">Часов<span class="stock__item-time" id="hours"></span></li>
+                        <li class="stock__item">Минут<span class="stock__item-time" id="minutes"></span></li>
+                        <li class="stock__item">Секунд<span class="stock__item-time" id="seconds"></span></li>
+                    </ul>
+                </div>
+
+                <div class="stock__block-form">
+                    <form class="stock__form example" action="mail/sendmail.php" method="POST">
+
+
+                        <input type="hidden" name="form_subject" value="Запись">
+
+                        <div class="stock__form-wrap">
+                            <input type="text" name="Имя" class="stock__name" placeholder="Ваше имя:"
+                                data-validate-field="myField">
+                        </div>
+
+                        <div class="stock__form-wrap">
+                            <input type="tel" name="Телефон" class="stock__phone" placeholder="Ваш телефон:"
+                                data-validate-field="tel">
+                        </div>
+                        <button class="btn stock__btn" type="submit">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+                <div class="stock__img">
+                    <img src="images/stock-women.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title title-center">
+                Портфолио
+            </h2>
+
+            <div class="portfolio__btn-wrap">
+                <button class="portfolio__btn portfolio__btn-all" data-filter="all">Все </button>
+                <button class="portfolio__btn" data-filter=".category-a">Вечернье прически </button>
+                <button class="portfolio__btn" data-filter=".category-b">Cвадебные прически</button>
+                <button class="portfolio__btn" data-filter="">Ламинирование волос</button>
+                <button class="portfolio__btn" data-filter="">Креативные стрижки</button>
+
+                <button class="portfolio__btn" data-filter="">Аэро макияж </button>
+                <button class="portfolio__btn" data-filter="">Аква макияж</button>
+                <button class="portfolio__btn" data-filter="">Дневной макияж</button>
+                <button class="portfolio__btn" data-filter="">Вечерний макияж</button>
+                <button class="portfolio__btn" data-filter="">Наращивание ресниц </button>
+            </div>
+
+            <div class="portfolio__gallery">
+                <div class="mix category-a">
+                    <div class="gallery__inner">
+
+                        <div class="gallery__block-big gallery__block-one">
+                            <div class="gallery__one-wrap">
+                                <a href="images/portfolio/item1.jpg" class="gallery__item" data-fancybox>
+                                    <img src="images/portfolio/item1.jpg" alt="">
+                                </a>
+                                <a href="images/portfolio/item2.jpg" class="gallery__item" data-fancybox>
+                                    <img src="images/portfolio/item2.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="images/portfolio/item3.jpg" class="gallery__item-big" data-fancybox>
+                                <img src="images/portfolio/item3.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="gallery__block-two">
+                            <a href="images/portfolio/item4.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item4.jpg" alt="">
+                            </a>
+                            <a href="images/portfolio/item6.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item6.jpg" alt="">
+                            </a>
+                            <a href="images/portfolio/item7.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item7.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="gallery__block-big gallery__block-three">
+                            <a href="images/portfolio/item5.jpg" class="gallery__item-big" data-fancybox>
+                                <img src="images/portfolio/item5.jpg" alt="">
+                            </a>
+                            <div class="gallery__one-wrap">
+                                <a href="images/portfolio/item8.jpg" class="gallery__item" data-fancybox>
+                                    <img src="images/portfolio/item8.jpg" alt="">
+                                </a>
+                                <a href="images/portfolio/item9.jpg" class="gallery__item" data-fancybox>
+                                    <img src="images/portfolio/item9.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="gallery__inner mix category-b">
+
+                    <div class="gallery__block-big gallery__block-one">
+                        <div class="gallery__one-wrap">
+                            <a href="images/portfolio/item1.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item1.jpg" alt="">
+                            </a>
+                            <a href="images/portfolio/item2.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item2.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="images/portfolio/item3.jpg" class="gallery__item-big" data-fancybox>
+                            <img src="images/portfolio/item3.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__block-two">
+                        <a href="images/portfolio/item4.jpg" class="gallery__item" data-fancybox>
+                            <img src="images/portfolio/item4.jpg" alt="">
+                        </a>
+                        <a href="images/portfolio/item6.jpg" class="gallery__item" data-fancybox>
+                            <img src="images/portfolio/item6.jpg" alt="">
+                        </a>
+                        <a href="images/portfolio/item7.jpg" class="gallery__item" data-fancybox>
+                            <img src="images/portfolio/item7.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__block-big gallery__block-three">
+                        <a href="images/portfolio/item5.jpg" class="gallery__item-big" data-fancybox>
+                            <img src="images/portfolio/item5.jpg" alt="">
+                        </a>
+                        <div class="gallery__one-wrap">
+                            <a href="images/portfolio/item8.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item8.jpg" alt="">
+                            </a>
+                            <a href="images/portfolio/item9.jpg" class="gallery__item" data-fancybox>
+                                <img src="images/portfolio/item9.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__pagination">
+                    <ul class="gallery__list">
+                        <li><a href="#" class="gallery__arrow gallery__arrow-prev icon-chevron-thin-left"></a></li>
+                        <li><a href="#" class="gallery__list-link">1</a></li>
+                        <li><a href="#" class="gallery__list-link">2</a></li>
+                        <li><a href="#" class="gallery__link-active gallery__list-link">3</a></li>
+                        <li><a href="#" class="gallery__list-link">4</a></li>
+                        <li><a href="#" class="gallery__list-link">5</a></li>
+                        <li><a href="#" class="gallery__arrow gallery__arrow-next icon-chevron-thin-right"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <h2 class="feedback__title title-center">
+                Отзывы
+            </h2>
+
+            <div class="swiper-container feedback__slider slider__block">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item1.jpg" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Светлана Кириленко
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Мария, хочу выразить слова признательности, из жгучий брюнетки превратили меня в
+                                    шатенку!
+                                    Вы сделали именно то, чего я так долго хотела и мне никто не мог в этом помочь! Вы
+                                    очень позитивный человек!!! Я очень рада, что стала Вашей клиенткой!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item3C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Вероника Лебедева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item2C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Наталья Ткачева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item1.jpg" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Светлана Кириленко
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Мария, хочу выразить слова признательности, из жгучий брюнетки превратили меня в
+                                    шатенку!
+                                    Вы сделали именно то, чего я так долго хотела и мне никто не мог в этом помочь! Вы
+                                    очень позитивный человек!!! Я очень рада, что стала Вашей клиенткой!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item3C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Вероника Лебедева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item2C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Наталья Ткачева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item1.jpg" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Светлана Кириленко
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Мария, хочу выразить слова признательности, из жгучий брюнетки превратили меня в
+                                    шатенку!
+                                    Вы сделали именно то, чего я так долго хотела и мне никто не мог в этом помочь! Вы
+                                    очень позитивный человек!!! Я очень рада, что стала Вашей клиенткой!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item3C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Вероника Лебедева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item2C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Наталья Ткачева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide feedback__items-wrap">
+                        <div class="feedback__items">
+                            <div class="feedback__img">
+                                <img src="images/feedback/item2C.png" alt="">
+                            </div>
+                            <div class="feedback__content">
+                                <h3 class="feedback__items-name">
+                                    Наталья Ткачева
+                                    <a href="#" class="feedback__link">https://vk.com/id9876543</a>
+                                </h3>
+                                <p class="feedback__text">
+                                    Более чуткого, ответсвенного и талантливого
+                                    мастера я не встречала! Мария сделала
+                                    мне невероятной красоты блонд! Хотя до этого
+                                    все меня только отговаривали, никто не хотел
+                                    браться! Спустя полгода мне снова захотелось
+                                    перемен и за один сеанс Мария снова вернула
+                                    меня в ряды рыжих.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="block__btn-wrap">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="feedback__btn-wrap">
+                <button class="feedback__btn btn" data-fancybox data-src="#modal__feedback">Написать отзыв</button>
+            </div>
+        </div>
+
+        <div class="modal__feedback modal__block" id="modal__feedback">
+            <div class="feedback__body modal__body">
+                <div class="modal__feedback-wrap">
+                    <h2 class="modal__feedback-title title-center">Написать отзыв</h2>
+
+
+                    <div class="feedback__form">
+                        <form class="feedback__form-block form example" action="mail/sendmail.php" method="POST"
+                            enctype="multipart/form-data">
+
+
+                            <input type="hidden" name="form_subject" value="Отзыв">
+
+                            <div class="modal__feedback-inner">
+                                <div class="modal__feedback-img">
+
+                                    <div class="feedback__img-wrap">
+                                        <img class="file-img" src="">
+                                        <div class="feedback__form-title">
+                                            Ваша фотография
+                                            с прической
+                                        </div>
+                                        <p class="modal__feedback-text">
+                                            Минимальный размер
+                                            500 х 400 рх
+                                        </p>
+                                    </div>
+
+                                    <div class="file__btn-wrap">
+                                        <label for="file__inp" class="file__inp">
+                                            Загрузить фото
+
+                                        </label>
+                                        <input id="file__inp" name="file[]" multiple type="file"
+                                            onchange="previewFile() " class="modal__feedback-upload">
+                                    </div>
+                                </div>
+
+                                <div class="modal__feedback-content">
+                                    <div class="feedback__input-wrapper">
+                                        <label for="feedback__name" class="feedback__label feedback__name">
+                                            Ваше имя: </label>
+                                        <div class="feedback__block-form">
+                                            <input id="feedback__name" name="Имя" type="text"
+                                                class="feedback__input feedback__name" placeholder="Светлана Кириленко"
+                                                data-validate-field="myField" required>
+                                        </div>
+
+                                        <label for="feedback__id" class="feedback__label feedback__id">Ваш ID в
+                                            ВК:</label>
+                                        <div class="feedback__block-form">
+                                            <input id="feedback__id" name="ID" type="text"
+                                                class="feedback__input feedback__id" placeholder="id98764321" required>
+                                        </div>
+                                    </div>
+                                    <div class="feedback__comment-wrap">
+                                        <div class="feedback__comment-top">
+                                            <label class="feedback__label">Комментарий:</label>
+                                            <div class="feedback__comment-symbols">
+                                                <span class="feedback__symbols-text">Осталось символов:</span> <span
+                                                    class="symbols-num">150</span></div>
+                                        </div>
+                                        <textarea name="Отзыв"
+                                            class="feedback__comment feedback__input feedback__comment-text"
+                                            placeholder="Текст" maxlength='150' data-validate-field="text"></textarea>
+                                    </div>
+
+                                    <button class="btn modal__feedback-btn" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="advance">
+        <div class="container">
+            <h2 class="advance__title title-center">
+                Достижения
+            </h2>
+
+            <div class="swiper-container slider__block slider__block-advance">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="advance__items-wrap">
+                            <img src="images/advance3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advance__items-wrap">
+                            <img src="images/advance2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advance__items-wrap">
+                            <img src="images/advance1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block__cover">
+                    <div class="block__btn-wrap advance-btn-wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact__title title-center">
+                Контакты
+            </h2>
+
+            <div class="contact__inner">
+                <div class="contact__content">
+                    <ul class="contact__list-info">
+                        <li class="contact__info-item contact-item__adress">
+                            г. Краснодар ул. Садовая д. 34
+                        </li>
+                        <li class="contact__info-item">
+                            <a class="contact__link-info contact__link-email" href="mailto:mari@mail.ru"
+                                class="info-item__link">mari@mail.ru</a>
+                        </li>
+                        <li class="contact__info-item">
+                            <a class="contact__link-info contact__link-num" href="tel:79876543210"
+                                class="info-item__link">+7 987 654 32 10</a>
+                        </li>
+                    </ul>
+
+                    <div class="contact__form">
+                        <h3 class="contact__form-title">
+                            У Вас есть фвопросы?
+                        </h3>
+                        <p class="contact__text">
+                            Вы можете написать мне на почту
+                        </p>
+
+                        <form class="contact__form-block form example" action="mail/sendmail.php" method="POST">
+
+                            <input type="hidden" name="form_subject" value="Задать вопрос">
+
+                            <div class="contact__inp-wrap contact__inp-mrg">
+                                <input class="contact__input" name="Имя" type="text" placeholder="Ваше имя:"
+                                    data-validate-field="myField" required>
+                            </div>
+                            <div class="contact__inp-wrap">
+                                <input class="contact__input" name="Email" type="email" placeholder="Ваш e-mail:"
+                                    data-validate-field="email" required>
+                            </div>
+                            <div class="contact__btn-wrap">
+                                <button class="contact__btn btn" type="submit">Задать вопрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact__navigation">
+                    <ul class="contact__list">
+                        <li class="social__item"><a href="#" class="social__item-link icon-vk"></a></li>
+                        <li class="social__item"><a href="#" class="social__item-link icon-instagram"></a></li>
+                        <li class="social__item"><a href="#" class="social__item-link icon-phone_in_talk"></a></li>
+                        <li class="social__item"><a href="#" class="social__item-link icon-whatsapp1"></a></li>
+                    </ul>
+
+                    <div class="conatct__map">
+                        <img src="images/map.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo__wrap">
+                    <img src="images/logo.png" alt="">
+                    <div class="logo__text">
+                        Салон красоты
+                        <span>г.Краснодар</span>
+                    </div>
+                </a>
+
+                <nav class="main__menu">
+                    <ul class="footer-main__list">
+                        <li class="main__list-item footer__item">
+                            <a href="#advantages" class="main__list-link footer__list-link">О мастере </a>
+                        </li>
+                        <li class="main__list-item footer__item">
+                            <a href="#services" class="main__list-link footer__list-link">Услуги </a>
+                        </li>
+                        <li class="main__list-item footer__item">
+                            <a href="#portfolio" class="main__list-link footer__list-link">Портфолио</a>
+                        </li>
+                        <li class="main__list-item footer__item">
+                            <a href="#stock" class="main__list-link footer__list-link">Акции</a>
+                        </li>
+                        <li class="main__list-item footer__item">
+                            <a href="#feedback" class="main__list-link footer__list-link">Отзывы </a>
+                        </li>
+                        <li class="main__list-item footer__item">
+                            <a href="#contact" class="main__list-link footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal__block modal__error" id="modal__error">
+        <div class="modal__body modal__body-error">
+            <div class="modal__inner modal__eror-inner">
+                <h2 class="modal__eror-title title-center">Ой, что-то пошло не так :(</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.sendmail.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

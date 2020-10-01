@@ -1,0 +1,114 @@
+@import "vars";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+}
+body {
+    background-color: $bgBody;
+    color: $darkYellow;
+    font-family: "PTSans", sans-serif;
+    overflow-x: hidden;
+}
+body.lock {
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+
+//delete arrow on input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+//delete arrow on input
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    padding: 0 21px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.title,
+.title-center{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #f0f2e9;
+    font-family: "Intro", sans-serif;
+}
+
+.title-center{
+    text-align: center;
+}
+
+.btn{
+    padding: 13.5px 12px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: $red;
+    border-radius: 2px;
+    font-size: 20px;
+    transition: background-color, .4s;
+    display: inline-block;
+    &:hover{
+        background-color: $hoverRed;
+    }
+}
